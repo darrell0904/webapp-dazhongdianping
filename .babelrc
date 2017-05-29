@@ -1,0 +1,16 @@
+{
+	"presets": [
+	    ["latest", {
+	      "es2015": {
+	        "loose": true,
+	        "modules": false
+	      }
+	    }],
+	    "react",
+	    "stage-0"
+	],
+	"plugins": [
+	    "react-hot-loader/babel",
+    	["import", { "style": "css", "libraryName": "antd-mobile" }],
+	]
+}
