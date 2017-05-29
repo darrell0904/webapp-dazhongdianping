@@ -131,6 +131,13 @@ module.exports = {
 	        include: path.resolve(__dirname, 'node_modules'),
 	        loader: 'style!css!postcss'
 	      },
+
+          { 
+          	test: /\.less$/, 
+          	exclude: /node_modules/, 
+          	loader: 'style!css!postcss!less' 
+          },
+
 	      
 		  {
 	        test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,

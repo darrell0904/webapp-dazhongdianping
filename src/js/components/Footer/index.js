@@ -8,6 +8,7 @@ class Footer extends React.Component {
     return (
       <div className={styles.root}>
         <h1>我是Footer</h1>
+        <input type="text" name="" />
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
-import {Footer,Content,Header } from '../components/index.js'
+import {Footer,Content,Header,HomeHeader } from '../../components/index.js'
+
 
 export default class Home extends Component {
 
@@ -9,7 +10,8 @@ export default class Home extends Component {
 
     return (
       <div className="box">
-        <Header />
+
+		<HomeHeader />
 
         <Content />
 
