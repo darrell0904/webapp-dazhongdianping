@@ -1,23 +1,52 @@
 import React, { Component } from 'react'
+import PureRenderMixin from 'react-addons-pure-render-mixin'
+import {Footer,Content,Header,HomeHeader,Category } from '../../components/index.js'
 
-import {Footer,Content,Header,HomeHeader } from '../../components/index.js'
+import Ad from './subpage/Ad';
+import List from './subpage/List';
+
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux'
 
 
-export default class Home extends Component {
+class Home extends Component {
+
+  constructor(props, context) {
+        super(props, context);
+        this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
+  }
 
   render() {
-
-
+    
     return (
       <div className="box">
+      		  <HomeHeader cityName={this.props.userinfo.cityName}/>
 
-		<HomeHeader />
+      		  <Category />
 
-        <Content />
+      		  <div style={{height: '15px'}}>{/* 分割线 */}</div>
+          
+            <Ad />
 
-        <Footer />
-
+            <List cityName={this.props.userinfo.cityName}/>
       </div>
     )
   }
 }
+
+// -------------------redux react 绑定--------------------
+
+function mapStateToProps(state) {
+    return {
+        userinfo: state.userinfo
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+    }
+}
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Home)

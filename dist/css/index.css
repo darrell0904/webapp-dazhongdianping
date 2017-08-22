@@ -1,0 +1,58 @@
+/*! Copyright by fujiawei1994@github.com. */
+.root___3mNl1{color:red;border-radius: 5px;border:1px solid #ddd;margin-top: 30px;background-color: green;}.root___oIi_B{color:#0088cc;border-radius: 5px;border:1px solid #ddd;margin-top: 30px;background-color: #EAEAEA;}.root___2p2SV {
+  background: #1bbc9b;
+  height: 0.9rem;
+  padding: 0 0.3rem;
+  display: flex;
+}
+
+.left___3gwq3 {
+  color: #fff;
+  margin-right: 0.4rem;
+  line-height: 3.5;
+  &:hover, &:active {
+    color: #fff;
+  }
+}
+
+.center___1WXFY {
+  flex-grow: 1;
+  margin-top: 0.2rem;
+  padding-left: 0.2rem;
+  background: #fff;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  color: #858585;
+  &:hover, &:active {
+    color: #858585;
+  }
+}
+
+.right___2Ymkz {
+  position: relative;
+  color: #fff;
+  font-size: 0.4rem;
+  line-height: 2.1;
+  margin-left: 0.3rem;
+  &:hover, &:active {
+    color: #fff;
+  }
+}
+
+.tip___2jlLS {
+  position: absolute;
+  display: inline-block;
+  width: 0.16rem;
+  height: 0.16rem;
+  border-radius: 50%;
+  background: #fe535c;
+  left: 0.24rem;
+  top: 0.24rem;
+}
+
+
+.search___2l35l {
+  font-size: 0.3rem;
+  line-height: 1.7;
+  margin-right: 0.2rem;
+}

@@ -17,7 +17,8 @@ module.exports = {
 
   output:{
     path: `${__dirname}/dist`,
-      filename: 'js/bundle.js',
+    filename: 'js/bundle.js',
+    publicPath: '/static/ordercenter/',
   },
 
   resolveLoader:{
@@ -75,6 +76,13 @@ module.exports = {
           // loader: ExtractTextPlugin.extract('css!postcss')
 
         },
+
+        { 
+            test: /\.less$/, 
+            exclude: /node_modules/, 
+            loader: 'style!css!postcss!less' 
+          },
+
         
       {
           test: /\.(otf|eot|svg|ttf|woff|woff2).*$/,

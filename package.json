@@ -16,6 +16,8 @@
     "react": "^15.5.4",
     "react-dom": "^15.4.2",
     "react-router": "^3.0.0",
+    "react-swipe": "^5.0.8",
+    "swipe-js-iso": "^2.0.3",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
@@ -24,6 +26,7 @@
     "babel-core": "^6.24.0",
     "babel-loader": "^6.4.1",
     "babel-plugin-import": "^1.0.1",
+    "babel-plugin-react-transform": "^2.0.2",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-latest": "^6.24.0",

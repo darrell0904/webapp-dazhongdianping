@@ -5,11 +5,17 @@ import { browserHistory } from 'react-router'
 
 import { AppContainer } from 'react-hot-loader'
 import Root from './container/Root'
+import configureStore from './store/configureStore'
+import { Provider } from 'react-redux'
+
+const store = configureStore();
 
 const render = Root => {
   ReactDOM.render(
     <AppContainer>
-      <Root history={browserHistory}/>
+      <Provider store={store}>
+      	<Root history={browserHistory}/>
+      </Provider>
     </AppContainer>,
     document.getElementById('app')
   )
